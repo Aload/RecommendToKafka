@@ -6,7 +6,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"strings"
 	"sync"
-	"Kafka"
+	"kafka"
 )
 
 const (
@@ -60,7 +60,7 @@ func QueryData(wait sync.WaitGroup, table_name string, code int, parameter strin
 			kafkaValues = strings.Join([]string{kafkaValues, value}, ",")
 		}
 		fmt.Println(kafkaValues + "-----------------------------------")
-		Kafka.SendMsgIntoKafka(wait, "", kafkaValues)
+		kafka.SendMsgIntoKafka(wait, "", kafkaValues)
 	}
 	if err = rows.Err(); err != nil {
 		panic(err.Error())

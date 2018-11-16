@@ -1,4 +1,4 @@
-package Kafka
+package kafka
 
 import (
 	"path/filepath"
@@ -14,33 +14,8 @@ import (
 )
 
 type SSlog struct {
-	WebsiteId               int64   `json:"website_id"`
-	DistinctId              string  `json:"distinct_id"`
-	PromotionSource         string  `json:"promotion_source"`
-	PlatformId              int64   `json:"platform_id"`
-	Date                    string  `json:"date"`
-	WTagPage                string  `json:"w_tag_page"`
-	Time                    string  `json:"time"`
-	CouponIdList            string  `json:"coupon_id_list"`
-	Model                   string  `json:"model"`
-	Browser                 string  `json:"browser"`
-	Country                 string  `json:"country"`
-	WTagHyperlink           string  `json:"w_tag_hyperlink"`
-	Ip                      string  `json:"ip"`
-	ScreenHeight            string  `json:"screen_height"`
-	ScreenWidth             string  `json:"screen_width"`
-	ITagHyperlink           string  `json:"i_tag_hyperlink"`
-	GrandTotal              float64 `json:"grand_total"`
-	Referrer                string  `json:"referrer"`
-	Title                   string  `json:"title"`
-	LatestTrafficSourceType string  `json:"latest_traffic_source_type"`
-	ITagPage                string  `json:"i_tag_page"`
-	OsVersion               string  `json:"os_version"`
-	Manufacturer            string  `json:"manufacturer"`
 	Os                      string  `json:"os"`
-	Sku                     string  `json:"sku"`
 	ITag                    string  `json:"i_tag"`
-	BrowserVersion          string  `json:"browser_version"`
 	WTag                    string  `json:"w_tag"`
 	Province                string  `json:"province"`
 	LoginUserId             string  `json:"login_user_id"`
