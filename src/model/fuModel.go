@@ -14,6 +14,8 @@ const (
 	BA_PARAMTER = "root:hadoop@tcp(192.168.236.11:3306)/ba?charset=utf8"
 	DB_FU       = "fu"
 	FU_PARAMTER = "root:hadoop@tcp(192.168.236.11:3306)/fu?charset=utf8"
+	FILE_PATH_1 = "E:/DataSource/data1/data"
+	FILE_PATH_2 = "E:/DataSource/data2/data"
 )
 
 //into parameter
